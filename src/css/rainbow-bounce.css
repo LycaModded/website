@@ -1,0 +1,44 @@
+@keyframes rainbow {
+	0% {
+		color: red;
+	}
+	25% {
+		color: orange;
+	}
+	50% {
+		color: yellow;
+	}
+	75% {
+		color: violet;
+	}
+	100% {
+		color: red;
+	}
+}
+
+.italic-rainbow {
+	animation: rainbow 4s linear infinite;
+	font-style: italic;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(5px);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+}
+
+.bounce {
+	display: inline-block;
+	animation: bounce 1.5s ease-in-out infinite;
+	animation-fill-mode: both;
+}
+
+.italic-rainbow.bounce {
+	animation:
+		rainbow 4s linear infinite,
+		bounce 1.5s ease-in-out infinite;
+}

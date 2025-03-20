@@ -1,0 +1,23 @@
+{
+	"name": "LycaModded-Site",
+	"description": "the website for the LycaModded minecraft server",
+	"type": "module",
+	"repository": "https://github.com/LycaModded/site",
+	"author": "cuboid",
+	"license": "GPL-3.0-only",
+	"private": false,
+	"version": "0.1.0",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "prettier . --write"
+	},
+	"devDependencies": {
+		"astro": "^5.5.2",
+		"prettier": "^3.5.3",
+		"prettier-plugin-astro": "^0.14.1",
+		"typescript": "^5.8.2"
+	}
+}

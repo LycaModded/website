@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import "../css/rainbow-bounce.css";
+---
+
+<BaseLayout>
+	<div class="hide-on-small-screen server-status">
+		<b><u>Server Info</u></b>
+		<p>
+			<b>Server online:</b>
+			<span id="server-is-online"></span>
+			<br />
+			<b>Players online:</b>
+			<span id="server-players-online"></span>
+		</p>
+	</div>
+
+	<header>
+		<h1 class="italic-rainbow bounce">hai plz send fent plz</h1>
+	</header>
+
+	<main>
+		<p>IP: modded.lycanea.dev</p>
+		<br />
+		<b>SMP Rules</b>
+		<ul>
+			<li>
+				No griefing (even if the chunks arent claimed, stealing counts
+				as griefing)
+			</li>
+			<li>No duping and no hacking</li>
+			<li>Killing people randomly for no reason isn't very cool</li>
+			<li>Do not create malware with computercraft</li>
+			<li>
+				Be aware of the servers hardware limitations (the server is
+				pretty powerful but if you make lag machines I'll go in and
+				remove them, if lag is caused unintentionally I will ask you to
+				fix it)
+			</li>
+			<li>
+				Missuse of the claims system will result in punishment (e.g.
+				claiming public infrastructure (transport networks) or other
+				peoples bases)
+			</li>
+		</ul>
+
+		<b>SMP "Rules" (but not actually rules):</b>
+		<ul>
+			<li>
+				Trains should stay on the left side if there is multiple tracks
+			</li>
+			<li>
+				Don't just ruin the terrain (leaving trees floating or quarrying
+				out areas, this doesn't apply if its your land :3)
+			</li>
+			<li>
+				Act civil and work together, most builds should be made in the
+				overworld and please use the main central transportation
+				networks so we can avoid having many seperate networks
+			</li>
+			<li>A request for increased claim chunks can be made, dm me :3</li>
+			<sup>- @lycanea</sup>
+		</ul>
+
+		<b>The Discord Server:</b>
+		<br />
+		<a href="https://discord.gg/fUDfsfDfSK">https://discord.gg/fUDfsfDfSK</a
+		>
+	</main>
+
+	<script src="../js/serverInfo.js"></script>
+	<script src="../js/rainbow-bounce.js"></script>
+
+	<style>
+		.server-status {
+			float: right;
+			padding-right: 16px;
+			width: 164px;
+		}
+	</style>
+</BaseLayout>
