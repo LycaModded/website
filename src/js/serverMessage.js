@@ -7,7 +7,7 @@ function fetchServerMessage() {
 			if (!response.ok) {
 				throw new Error("http response was not ok");
 			}
-			return response;
+			return response.text();
 		})
 		.then((data) => {
 			updateServerMessage(data);
