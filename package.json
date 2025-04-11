@@ -7,6 +7,7 @@
 	"license": "GPL-3.0-only",
 	"private": false,
 	"version": "0.1.0",
+	"packageManager": "pnpm@10.7.1",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
